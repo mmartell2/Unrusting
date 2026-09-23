@@ -14,10 +14,15 @@
     box-sizing: border-box;
     margin: 0;
     padding: 0;
+    /*border: 2px solid red;*/
 }
 
 body {
     background-color: var(--blue-950);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
 }
 
 .container {
@@ -25,7 +30,10 @@ body {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    height: 100vh;
+    background-color: var(--blue-900);
+    width: 90%;
+    gap: 1rem;
+    padding: 2rem 1rem 0rem;
 }
 
 .advice-h1 {
@@ -37,5 +45,23 @@ body {
 
 .advice-p {
     color: var(--blue-200);
-    font-size: 2rem;
+    font-size: 1.75rem;
+    text-align: center;
+    font-weight: 600;
+}
+
+.divider {
+    margin-top: .5rem;
+}
+
+.generate-btn {
+    background-color: var(--green-200);
+    padding: 1rem;
+    border-radius: 100%;
+    border: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    top: 1.8rem;
 }
