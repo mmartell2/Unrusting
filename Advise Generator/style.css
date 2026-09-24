@@ -14,7 +14,7 @@
     box-sizing: border-box;
     margin: 0;
     padding: 0;
-    /*border: 2px solid red;*/
+    /* border: 2px solid red; */
 }
 
 body {
@@ -31,14 +31,17 @@ body {
     justify-content: center;
     align-items: center;
     background-color: var(--blue-900);
+    border-radius: 8px;
+    max-width: 600px;
     width: 90%;
     gap: 1rem;
     padding: 2rem 1rem 0rem;
+    box-shadow: 5px 5px 2px rgb(21, 27, 32);
 }
 
 .advice-h1 {
     color: var(--green-200);
-    font-size: 1.5rem;
+    font-size: 1rem;
     font-weight: 300;
     letter-spacing: 0.2rem;
 }
@@ -48,6 +51,7 @@ body {
     font-size: 1.75rem;
     text-align: center;
     font-weight: 600;
+    max-width: 85%;
 }
 
 .divider {
@@ -64,4 +68,16 @@ body {
     align-items: center;
     position: relative;
     top: 1.8rem;
+    transition: .3s;
 }
+
+.generate-btn:hover {
+    cursor: pointer;
+    box-shadow: 0 0 10px var(--green-200);
+}
+
+/* @media (min-width: 376px){
+    .advice-h1 {
+        font-size: 1rem;
+    }
+} */
