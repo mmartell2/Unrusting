@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  
+  <title>Frontend Mentor | Typing Speed Test</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="flex-container">
+    <header>
+      <img src="images/logo-large (2).svg" alt="a keyboard with typing speed test type as fast as you can next to it">
+      <div class="header-right">
+        <img src="images/icon-personal-best (1).svg" alt="image of a trophy">
+        <h2 class="grey-text">Personal best:</h1>
+        <span class="personal-best">92 WPM</span>
+      </div>
+    </header>
+    <!-- info bar -->
+    <div class="info-bar">
+      <!-- WPM/Accuaracy/Time -->
+      <div class="info-bar-left">
+        <h2 class="wpm-current"><span class="grey-text">WPM: </span> 40</h2>
+        <h2 class="accuracy-current"><span class="grey-text">Accuracy: </span> 94%</h2>
+        <h2 class="time-current"><span class="grey-text">Time: </span> 0:46</h2>
+      </div>
+      <div class="info-bar-right">
+        <!-- Difficulty -->
+        <div class="difficulty-container">
+          <h2 class="grey-text">Difficulty:</h2>
+          <button class="easy-btn btn-nonselect">Easy</button>
+          <button class="medium-btn btn-nonselect">Medium</button>
+          <button class="hard-btn btn-selected">Hard</button>
+        </div>
+        <!-- Mode -->
+        <div class="mode-container">
+          <h2 class="grey-text">Mode:</h2>
+          <button class="timed-btn btn-selected">Timed (60s)</button>
+          <button class="pass-btn btn-nonselect">Passage</button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Passage blur on passage-text --> 
+
+    <div class="passage">
+      <p class="passage-text"><span class="correct-text">The sun rose over the q<span class="incorrect-text">uiet to</span>wn. Birds 
+        sang in the trees as people woke up and started their day. It was going to b<span class="incorrect-text">e a wa</span></span>rm 
+        and sunny morning. The archaeological expedition unearthed artifacts that complicated prevailing theories about Bronze Age trade 
+        networks. Obsidian from Anatolia, lapis lazuli from Afghanistan, and amber from the Baltic-all discovered in a single Mycenaean 
+        tomb-suggested commercial connections far more extensive than previously hypothesized. "We've underestimated ancient peoples' 
+        navigational capabilities and their appetite for luxury goods," the lead researcher observed. </p>
+        <div class="start-btn-container hidden">
+          <button class="start-btn">Start Typing Test</button>
+          <h2>Or click the text and start typing</h2>
+        </div>
+    </div>
+
+    <!-- Basline Established -->
+
+    <div class="results-container hidden">
+      <img src="images/icon-completed (1).svg" alt="a green circle with a black check mark in the center">
+      <div class="results-header">
+        <h1>Baseline Established!</h1>
+        <p>You've set the bar. Now the real challenge begins-time to beat it.</p>
+      </div>
+      <div class="results-score">
+        <div class="wpm-results-container">
+          <h2>WPM:</h2>
+          <p class="wpm-results">85</p>
+        </div>
+        <div class="accuracy-results-container">
+          <h2>Accuracy:</h2>
+          <p class="accuracy-results">90%</p>
+        </div>
+        <div class="characters-results-container">
+          <h2>Characters</h2>
+          <p class="characters-results">120/<span>5</span></p>
+        </div>
+      </div>
+      <button class="restart-btn">Beat This Score <img src="images/icon-restart (1).svg" alt=""></button>
+    </div>
+
+    <!-- test completed -->
+    <div class="results-container hidden">
+      <img src="images/icon-completed (1).svg" alt="a green circle with a black check mark in the center">
+      <div class="results-header">
+        <h1>Test Complete!</h1>
+        <p>Solid run. Keep pushing to beat your high score.</p>
+      </div>
+      <div class="results-score">
+        <div class="wpm-results-container">
+          <h2>WPM:</h2>
+          <p class="wpm-results">85</p>
+        </div>
+        <div class="accuracy-results-container">
+          <h2>Accuracy:</h2>
+          <p class="accuracy-results">90%</p>
+        </div>
+        <div class="characters-results-container">
+          <h2>Characters</h2>
+          <p class="characters-results">120/<span>5</span></p>
+        </div>
+      </div>
+      <button class="restart-btn">Go Again <img src="images/icon-restart (1).svg" alt=""></button>
+    </div>
+
+    <!-- high score screen -->
+
+    <div class="results-container hidden">
+      <img src="images/icon-new-pb (2).svg" alt="a green circle with a black check mark in the center">
+      <div class="results-header">
+        <h1>High Score Smashed!</h1>
+        <p>You're getting faster. That was incredible typing</p>
+      </div>
+      <div class="results-score">
+        <div class="wpm-results-container">
+          <h2>WPM:</h2>
+          <p class="wpm-results">85</p>
+        </div>
+        <div class="accuracy-results-container">
+          <h2>Accuracy:</h2>
+          <p class="accuracy-results">90%</p>
+        </div>
+        <div class="characters-results-container">
+          <h2>Characters</h2>
+          <p class="characters-results">120/<span>5</span></p>
+        </div>
+      </div>
+      <button class="restart-btn">Beat This Score <img src="images/icon-restart (1).svg" alt=""></button>
+      <img class="confetti-img" src="images/pattern-confetti (2).svg" alt="image of falling confetti">
+    </div>
+<!--  
+    Start Typing Test
+    Or click the text and start typing
+
+     Test Complete Start 
+
+    Test Complete!
+    Solid run. Keep pushing to beat your high score.
+
+    WPM:  WPM 
+    Accuracy:  Accuracy 
+    Characters:  Correct/Incorrect 
+
+    Go Again
+    
+    Test Complete End
+      -->
+    <button class="restart-btn">Restart Test<img src="images/icon-restart (1).svg" alt=""></button>
+
+    <footer class="attribution">
+    </footer>
+  </div>
+</body>
+</html>
